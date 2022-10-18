@@ -46,22 +46,22 @@ const animate = ()=>{
 requestAnimationFrame(animate);
 requestAnimationFrame(draw);
 
-let j =0;
-let t1 = 0;
-const interval = 1;
+// let j =0;
+// let t1 = 0;
+// const interval = 1;
 
 
-function repaint(timestamp){ /* pass 'time' parameter -> gives miliseconds from the begning */
-    if(!t1) t1 = timestamp;
-    const diff = timestamp - t1;
-    if(diff >= (interval * 1000)){
-        t1 = timestamp;
-        console.log('Painted: ' + j++);
-    }
-    requestAnimationFrame(repaint);
-}
+// function repaint(timestamp){ /* pass 'time' parameter -> gives miliseconds from the begning */
+//     if(!t1) t1 = timestamp;
+//     const diff = timestamp - t1;
+//     if(diff >= (interval * 1000)){
+//         t1 = timestamp;
+//         console.log('Painted: ' + j++);
+//     }
+//     requestAnimationFrame(repaint);
+// }
 
-requestAnimationFrame(repaint);
+// requestAnimationFrame(repaint);
 
 
 
