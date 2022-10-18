@@ -10,12 +10,12 @@ let index = 0;
 
 const draw = ()=>{
     if(dy!=0){
-        playerElm.style.backgroundImage = `url(/img/charactor/Jump__00${index++}.png)`;
+        playerElm.style.backgroundImage = `url(img/charactor/Jump__00${index++}.png)`;
     }else if(dx!=0){
         console.log(index);
-        playerElm.style.backgroundImage = `url(/img/charactor/Run__00${index++}.png)`;
+        playerElm.style.backgroundImage = `url(img/charactor/Run__00${index++}.png)`;
     }else{
-        playerElm.style.backgroundImage = `url(/img/charactor/Idle__00${index++}.png)`;
+        playerElm.style.backgroundImage = `url(img/charactor/Idle__00${index++}.png)`;
     }
     if(index >9) index =1;
     requestAnimationFrame(draw); /* called at end of function again */
